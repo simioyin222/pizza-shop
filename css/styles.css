@@ -11,3 +11,24 @@ body {
   max-width: 400px;
   text-align: center;
 }
+
+h1 {
+  color: chocolate;
+  margin-bottom: 20px;
+}
+
+.toppings {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: darkslategray;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+}
