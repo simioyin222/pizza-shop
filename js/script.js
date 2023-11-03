@@ -14,10 +14,15 @@ Pizza.prototype.calculateCost = function () {
       break
     case 'medium':
       sizeMultiplier = 1;
+      break;
+      
+    case 'large':
+      sizeMultiplier = 1.2;
       break; 
 
     default:
       console.error("Invalid size")
       return 0
   }
-}
+  return (basePrice + (this.toppings.length * toppingPrice)) * sizeMultiplier;
+};
