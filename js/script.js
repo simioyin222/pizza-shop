@@ -1,3 +1,4 @@
+//Business Logic
 function Pizza(toppings, size) {
   this.toppings = toppings
   this.size = size
@@ -26,3 +27,22 @@ Pizza.prototype.calculateCost = function () {
   }
   return (basePrice + (this.toppings.length * toppingPrice)) * sizeMultiplier;
 };
+
+//UI Logic
+function getSelectedToppings() {
+  const selectedToppings = [];
+  const checkboxes = document.querySelectorAll('.topping-checkbox:checked');
+  checkboxes.forEach(function(checkbox) {
+    selectedToppings.push(checkbox.id);
+  });
+  return selectedToppings;
+}
+
+function getSelectedSize() {
+  return document.getElementById('size').value;
+}
+
+function displayCost(cost) {
+  const resultDiv = document.getElementById('result');
+  resultDiv.textContent = `Total Cost: $${cost.toFixed(2)}`;
+}
