@@ -32,3 +32,13 @@ Expected Output: "14.4"
 Test: It should correctly calculate the cost of a medium pizza with no toppings
 Code: "const myPizza = new Pizza([], "medium"); myPizza.calculateCost();"
 Expected Output: "12"
+
+## Test 6
+Test: It should correctly calculate the cost of a large pizza with multiple toppings
+Code: "const myPizza = new Pizza(["cheese", "pepperoni", "mushrooms"], "large"); myPizza.calculateCost();"
+Expected Output:"16.8"
+
+## Test 7
+Test: It should correctly calculate the cost of a large pizza with no toppings
+Code: "const myPizza = new Pizza([], "large"); myPizza.calculateCost();"
+Expected Output: "14.4"
