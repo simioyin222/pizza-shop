@@ -46,3 +46,11 @@ function displayCost(cost) {
   const resultDiv = document.getElementById('result');
   resultDiv.textContent = `Total Cost: $${cost.toFixed(2)}`;
 }
+
+document.getElementById('calculate').addEventListener('click', function() {
+  const selectedToppings = getSelectedToppings();
+  const selectedSize = getSelectedSize();
+  const pizza = new Pizza(selectedToppings, selectedSize);
+  const cost = pizza.calculateCost();
+  displayCost(cost);
+});
