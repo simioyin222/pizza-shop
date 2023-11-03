@@ -12,6 +12,9 @@ Pizza.prototype.calculateCost = function () {
     case "small":
       sizeMultiplier = 0.8
       break
+    case 'medium':
+      sizeMultiplier = 1;
+      break; 
 
     default:
       console.error("Invalid size")
