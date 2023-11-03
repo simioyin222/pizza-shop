@@ -17,3 +17,8 @@ Expected Output: "0"
 Test: It should correctly calculate the cost of a small pizza with no toppings
 Code: "const myPizza = new Pizza([], "small"); myPizza.calculateCost();"
 Expected Output: "8"
+
+## Test 3
+Test: It should correctly calculate the cost of a small pizza with toppings
+Code: "const myPizza = new Pizza(["cheese", "pepperoni"], "small"); myPizza.calculateCost();"
+Expected Output: "12"
