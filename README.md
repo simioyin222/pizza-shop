@@ -1,3 +1,28 @@
+# PizzaShop
+
+## By Similoluwa Oyinkolade
+
+## Brief Description
+
+PizzaShop is a simple web application that allows users to customize and order pizzas. Users can choose from a selection of toppings and pizza sizes to create their perfect pizza and view the total cost.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Setup/Installation Requirements
+
+1. Clone the repository to your local machine using the following command: https://github.com/simioyin222/pizza-shop
+2. Navigate to the project directory using: cd pizzashop
+3. Open the `index.html` file in your web browser to use the application
+
+
+
+
+
+
 ## Test 
 Describe: Pizza()
 
